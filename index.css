@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(212, 115, 236, 0.8),transparent);
+    /* background-size: cover;
+    background-position: center; */
+    padding: 0 8%;
+    position: relative;
+    background-color: #c3bac3;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right:30px ;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    /* transform: translateX(-120%);
+    background: #fff; */
+    transition: width .3s;
+}
+/* nav ul li a:hover::after{
+    width: 50%;
+} */
+
+.text{
+    color: #fff;
+    position: absolute;
+    bottom: 45%;
+
+}
+.text h1{
+    font-size: 190px;
+    line-height: 300px;
+    margin-left: 187px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px  0;
+    }
+}
+.text h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+#head{
+    position: relative;
+    margin-left: 220px;
+
+}
+#head::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #C99FD2;
+    
+    width: 100%;
+    animation: typing 10s steps(25) alternate infinite, line 1s infinite;
+
+}
+@keyframes typing{
+to{
+    width: 0%;
+}
+
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* team */
+/* .gh{
+	width: 100%;
+	height: 100%;
+	background: #020202;
+	color: #bfbcbc;
+	font-family: "Open Sans", sans-serif;
+	font-size: 11px;
+	} */
+
+
+
+
+
+
+

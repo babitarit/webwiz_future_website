@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #e497e9;
+    color: white;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+.events{
+    display: flex;
+    padding: 40px 0;
+    width: 98vw;
+    justify-content: space-around;
+    column-gap: 0;
+}
+.events > div{
+    height: 330px;
+}
+.eventInfo{
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    background-color:  rgba(255,255,255,0.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-radius: 20px;
+}
+.eventImg img{
+    height: 100%;
+    width: 100%;
+}
+.eventInfo:hover{
+    box-shadow: 0.2rem 0.2rem 1.3rem 0.8rem #cf16c8;
+    border: none;
+}
+#img1{
+    margin-left: 117px;
+}
+#img3{
+    margin-left: 117px;
+}
+.moreInfo{
+    padding-top: 30px;
+}
+.moreInfo a{
+    padding: 10px 15px;
+    background-color: #cf16c8;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.moreInfo a:hover{
+    background-color: #161623;
+    border: 2px solid #cf16c8;
+}
+
+
+
+.evo{
+    color: white;
+    
+    margin-left: 64px;
+   
+    margin-top: 45px;
+
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 15px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0008); */
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+color: #0e3742;
+text-shadow: none;
+    }
+   18.1%,20.1%,30%,50%,60.1%,65%, 80.1%,90%,92.1%,100%{
+    color: #fff;
+    text-shadow: 
+    0 0 10px  rgb(217 135 238 / 80%),
+    0 0 20px  rgb(217 135 238 / 80%),
+    0 0 40px  rgb(217 135 238 / 80%),
+    0 0 80px  rgb(217 135 238 / 80%),
+    0 0 160px rgb(217 135 238 / 80%);
+
+    }
+}

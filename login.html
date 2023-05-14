@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="login()" id="loginForm" action="">
+            <h2>Sign in
+                <br>
+                Exclusively For Members
+            </h2>
+            <div class="inputBox">
+                <input id="email" type="email" required="required">
+                <span>E-mail</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="">Forgot Password</a>
+            </div>
+                <a href="Progress.html" id="login" class="loginButton" type="submit">Login</a>
+                <!-- <input id="signUp" class="loginButton" type="submit" value="SignUp"> -->
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        
+    <script src="firebase.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
